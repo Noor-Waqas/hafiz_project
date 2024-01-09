@@ -1,9 +1,6 @@
 
 import AllRoutes from "./routes"
-
 function App() {
-
-
   return (
     <>
       <AllRoutes/>
