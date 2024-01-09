@@ -1,7 +1,7 @@
-import React from 'react';
 import { AreaChartOutlined, SettingOutlined, UserOutlined ,LoginOutlined,UnorderedListOutlined,HomeOutlined,QuestionCircleOutlined} from '@ant-design/icons';
 import { Layout, Menu, theme ,Button} from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+
 
 const { Header, Content, Sider } = Layout;
 const items2 = [
@@ -112,7 +112,7 @@ const index = () => {
                   borderRadius: borderRadiusLG,
                 }}
               >
-            contect text
+                <Outlet />
               </Content>
             </Layout>
           </Layout>
@@ -121,11 +121,3 @@ const index = () => {
 }
 
 export default index
-
-
-
-
-
-
-
-

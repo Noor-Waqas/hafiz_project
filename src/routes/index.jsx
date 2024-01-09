@@ -16,19 +16,22 @@ import Subscription from "../component/subscription";
 const index = () => {
   return (
     <div>
-      {/* <Nav/> */}
+    {/* <Nav/> */}
+
     <BrowserRouter>
-        <Nav/>
-            <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/customer" element={<Cuctomer />}/>
-            <Route path="/reports" element={<Report />}/>
-            <Route path="/setup" element={<Setting />}/>
-            <Route path="/support" element={<Support />}/>
-            <Route path="/subscription" element={<Subscription />}/>
-            </Routes>
-      </BrowserRouter>
-    </div>
+      <Routes>
+      <Route element={<Nav />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/customer" element={<Cuctomer />} />
+          <Route path="/reports" element={<Report />} />
+          <Route path="/setup" element={<Setting />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/subscription" element={<Subscription />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
+  </div>
   )
 }
 
