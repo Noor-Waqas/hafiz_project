@@ -64,10 +64,10 @@ const index = () => {
             }}
           >
                 <div className="logo" style={{ color: 'white' }}>
-                +923206437540
+                +923224159844
                 </div>
     
-                 <div style={{ fontSize: '20px', color: '#fff' }}>Shop One</div>
+                 <div style={{ fontSize: '20px', color: '#fff' }}>Naqsh e Lasani Drycleaner </div>
     
             <Button icon={<LoginOutlined />} style={{ color: 'white' }} type="text">
               Login
