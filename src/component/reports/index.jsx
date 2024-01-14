@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import { UserOutlined ,UsergroupAddOutlined,DownloadOutlined} from '@ant-design/icons';
 import { Button, Input,  Space ,DatePicker ,Select} from 'antd';
+import HeroSection from '../navbar/hero';
 import style from "./style.module.scss";
 
 const options = [
@@ -59,7 +60,8 @@ const options = [
 const index = () => {
   return (
     <div>
-      <div className={style.InputStyleDiv}>
+      <HeroSection/>
+      <div className={style.InputStyleDiv}style={{marginTop:"10px"}}>
         <div>
           <h4 className={style.headingDiv}>Order Report</h4>
           </div>

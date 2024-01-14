@@ -7,6 +7,8 @@ import Report from "../component/reports";
 import Setting from "../component/set_up";
 import Support from "../component/support";
 import Subscription from "../component/subscription";
+import Login from "../component/login";
+import HeroPart from "../component/navbar/hero";
 
 
 
@@ -21,13 +23,16 @@ const index = () => {
     <BrowserRouter>
       <Routes>
       <Route element={<Nav />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/customer" element={<Cuctomer />} />
-          <Route path="/reports" element={<Report />} />
-          <Route path="/setup" element={<Setting />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/subscription" element={<Subscription />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/customer" element={<Cuctomer />} />
+        <Route path="/reports" element={<Report />} />
+        <Route path="/setup" element={<Setting />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/subscription" element={<Subscription />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/hero" element={<HeroPart/>} />
+
+       </Route>
       </Routes>
     </BrowserRouter>
     
