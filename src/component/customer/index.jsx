@@ -2,6 +2,7 @@ import React from 'react';
 import style from "./style.module.scss";
 import { SearchOutlined } from '@ant-design/icons';
 import {Button,Cascader,DatePicker,Form,Input,InputNumber,Select, } from 'antd';
+import HeroSection from '../navbar/hero';
 
   const { RangePicker } = DatePicker;
 const formItemLayout = {
@@ -26,7 +27,8 @@ const formItemLayout = {
 const index = () => {
   return (
     <div>
-      <div className={style.headingDiv}>
+      <HeroSection/>
+      <div className={style.headingDiv} style={{marginTop:"10px"}}>
         <h1 className={style.headingStyle}>Customer Create/Update/Delete</h1>
       </div>
     
