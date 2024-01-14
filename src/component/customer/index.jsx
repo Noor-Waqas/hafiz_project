@@ -1,4 +1,4 @@
-import React, from 'react';
+import React from 'react';
 import style from "./style.module.scss";
 import { SearchOutlined } from '@ant-design/icons';
 import {Button,Cascader,DatePicker,Form,Input,InputNumber,Select, } from 'antd';
