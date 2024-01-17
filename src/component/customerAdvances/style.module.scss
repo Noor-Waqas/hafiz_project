@@ -1,0 +1,21 @@
+.HeadingDiv{
+    width: 100%;
+    height: 45px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    border-radius: 5px;
+    .headingStyles{
+        color: white;
+        font-size: 16px;
+    }
+}
+.inputDivStyles{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    .inputStyles{
+        width: 50%;
+    }
+}
