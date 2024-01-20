@@ -1,328 +1,340 @@
-import React, { useState } from 'react';
-import { DownloadOutlined, UserOutlined, SettingOutlined,FundProjectionScreenOutlined,ContactsOutlined,ReconciliationOutlined,DatabaseOutlined } from '@ant-design/icons';
-import { Menu } from 'antd';
+import  { useState } from "react";
+import {
+  DownloadOutlined,
+  UserOutlined,
+  SettingOutlined,
+  FundProjectionScreenOutlined,
+  ContactsOutlined,
+  ReconciliationOutlined,
+  DatabaseOutlined,
+} from "@ant-design/icons";
+import { Menu } from "antd";
 import style from "./style.module.scss";
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from "react-router-dom";
 
 const items = [
   {
-    label: 'Customer',
-    key: 'Customer',
+    label: "Customer",
+    key: "Customer",
     icon: <UserOutlined />,
-    path: '/',
+    path: "/",
     content: <Link to="/">Home</Link>,
     children: [
-        {
-          type: 'group',
-          label: 'Customer',
-          children: [
-            {
-              label: 'Home',
-              key: 'Home',
-            },
-            {
-              label: 'Cuctomer Preference',
-              key: 'customer1',
-            }, 
-            {
-                label: 'Add New',
-                key: 'customer2',
-              },
-              {
-                label: 'Merge',
-                key: 'customer3',
-              },
-              {
-                label: 'Send Promotional Sms',
-                key: 'customer4',
-              },
-              {
-                label: 'Cuctomer Address',
-                key: 'customer4',
-              },
-          ],
-        },
-        
-      ],
+      {
+        type: "group",
+        label: "Customer",
+        children: [
+          {
+            label: "Home",
+            key: "/",
+          },
+          {
+            label: "Cuctomer Preference",
+            key: "/preference",
+          },
+          {
+            label: "Add New",
+            key: "/customer",
+          },
+          {
+            label: "Merge",
+            key: "/merge",
+          },
+          {
+            label: "Send Promotional Sms",
+            key: "/message",
+          },
+          {
+            label: "Cuctomer Address",
+            key: "/customer.addwance",
+          },
+        ],
+      },
+    ],
   },
   {
-    label: 'Drop',
-    key: 'Drop',
+    label: "Drop",
+    key: "Drop",
     icon: <DownloadOutlined />,
     children: [
-        {
-          type: 'group',
-          label: 'Drop',
-          children: [
-            {
-              label: 'Edit Order',
-              key: 'EditOrder',
-            },
-            {
-              label: 'Cancel Oeder',
-              key: 'CancelOeder',
-            },
-            {
-                label: 'Delete Oeder',
-                key: 'DeleteOeder',
-              }
-          ],
-        },
-        
-      ],
+      {
+        type: "group",
+        label: "Drop",
+        children: [
+          {
+            label: "Edit Order",
+            key: "/edit",
+          },
+          {
+            label: "Cancel Oeder",
+            key: "/cancel.order",
+          },
+          {
+            label: "Delete Oeder",
+            key: "/delete.order",
+          },
+        ],
+      },
+    ],
   },
   {
-    label: 'Process',
-    key: 'Process',
+    label: "Process",
+    key: "Process",
     icon: <FundProjectionScreenOutlined />,
     children: [
       {
-        type: 'group',
-        label: 'Process',
+        type: "group",
+        label: "Process",
         children: [
           {
-            label: 'Print QR TAgs',
-            key: 'PrintQRTAgs',
+            label: "Print QR TAgs",
+            key: "PrintQRTAgs",
           },
           {
-            label: 'Pending For Finishing',
-            key: 'PendingForFinishing',
+            label: "Pending For Finishing",
+            key: "PendingForFinishing",
           },
           {
-            label: 'Paking Stikers',
-            key: 'PakingStikers',
-          }
+            label: "Paking Stikers",
+            key: "PakingStikers",
+          },
         ],
       },
-      
     ],
   },
   {
-    label: 'Accounts',
-    key: 'Accounts',
+    label: "Accounts",
+    key: "Accounts",
     icon: <ContactsOutlined />,
     children: [
       {
-        type: 'group',
-        label: 'Accounts',
+        type: "group",
+        label: "Accounts",
         children: [
           {
-            label: 'Cash/Days Book',
-            key: 'CashBook',
+            label: "Cash/Days Book",
+            key: "CashBook",
           },
           {
-            label: 'Detail Cash/Day Book',
-            key: 'DetailCash',
+            label: "Detail Cash/Day Book",
+            key: "DetailCash",
           },
           {
-            label: 'Expensis',
-            key: 'Expensis',
+            label: "Expensis",
+            key: "Expensis",
           },
           {
-            label: 'Income',
-            key: 'Income',
-          },{
-            label: 'Payment Type',
-            key: 'PaymentType',
-          }
-          ,{
-            label: 'Text Report',
-            key: 'TextReport',
-          }
+            label: "Income",
+            key: "Income",
+          },
+          {
+            label: "Payment Type",
+            key: "PaymentType",
+          },
+          {
+            label: "Text Report",
+            key: "TextReport",
+          },
         ],
       },
-      
     ],
-  }, {
-    label: 'Reports',
-    key: 'Reports',
+  },
+  {
+    label: "Reports",
+    key: "Reports",
     icon: <ReconciliationOutlined />,
     children: [
       {
-        type: 'group',
-        label: 'Reports',
+        type: "group",
+        label: "Reports",
         children: [
           {
-            label: 'Order',
-            key: 'Order',
+            label: "Order",
+            key: "Order",
           },
           {
-            label: 'Sales and Delivery',
-            key: 'SalesandDelivery',
+            label: "Sales and Delivery",
+            key: "SalesandDelivery",
           },
           {
-            label: 'Service Wise Order',
-            key: 'ServiceWiseOrder',
+            label: "Service Wise Order",
+            key: "ServiceWiseOrder",
           },
           {
-            label: 'Service And Garment',
-            key: 'ServiceAndGarment',
+            label: "Service And Garment",
+            key: "ServiceAndGarment",
           },
           {
-            label: 'Category Wise Report',
-            key: 'CategoryWiseReport',
+            label: "Category Wise Report",
+            key: "CategoryWiseReport",
           },
           {
-            label: 'Garment Wise',
-            key: 'GarmentWise',
+            label: "Garment Wise",
+            key: "GarmentWise",
           },
           {
-            label: 'Garment Status',
-            key: 'GarmentStatus',
+            label: "Garment Status",
+            key: "GarmentStatus",
           },
           {
-            label: 'Garment Details',
-            key: 'GarmentDetails',
+            label: "Garment Details",
+            key: "GarmentDetails",
           },
           {
-            label: 'Payments Adjustment',
-            key: 'PaymentsAdjustment',
+            label: "Payments Adjustment",
+            key: "PaymentsAdjustment",
           },
           {
-            label: 'Daily Customer Addition',
-            key: 'DailyCustomerAddition',
+            label: "Daily Customer Addition",
+            key: "DailyCustomerAddition",
           },
           {
-            label: 'Marked Ready by User',
-            key: 'MarkedReadyUser',
+            label: "Marked Ready by User",
+            key: "MarkedReadyUser",
           },
           {
-            label: 'Without Ticket Delivery',
-            key: 'WithoutTicketDelivery',
+            label: "Without Ticket Delivery",
+            key: "WithoutTicketDelivery",
           },
           {
-            label: 'Order by Locality',
-            key: 'OrderbyLocality',
+            label: "Order by Locality",
+            key: "OrderbyLocality",
           },
           {
-            label: 'Pending Stock',
-            key: 'PendingStock',
-          }
+            label: "Pending Stock",
+            key: "PendingStock",
+          },
         ],
       },
-      
     ],
-  }, {
-    label: 'Master Data',
-    key: 'Master Data',
+  },
+  {
+    label: "Master Data",
+    key: "Master Data",
     icon: <DatabaseOutlined />,
     children: [
       {
-        type: 'group',
-        label: 'Master Data',
+        type: "group",
+        label: "Master Data",
         children: [
           {
-            label: 'Store Information',
-            key: 'StoreInformation',
+            label: "Store Information",
+            key: "StoreInformation",
           },
           {
-            label: 'Price List',
-            key: 'PriceList',
+            label: "Price List",
+            key: "PriceList",
           },
           {
-            label: 'Garment Descriptions',
-            key: 'GarmentDescriptions',
+            label: "Garment Descriptions",
+            key: "GarmentDescriptions",
           },
           {
-            label: 'Brand',
-            key: 'Brand',
+            label: "Brand",
+            key: "Brand",
           },
           {
-            label: 'Colours',
-            key: 'Colours',
+            label: "Colours",
+            key: "Colours",
           },
           {
-            label: 'Garment Return Cause',
-            key: 'GarmentReturnCause',
+            label: "Garment Return Cause",
+            key: "GarmentReturnCause",
           },
           {
-            label: 'Payment Adjustment Type',
-            key: 'PaymentAdjustmentType',
+            label: "Payment Adjustment Type",
+            key: "PaymentAdjustmentType",
           },
           {
-            label: 'Payment Mode Type',
-            key: 'PaymentModeType',
+            label: "Payment Mode Type",
+            key: "PaymentModeType",
           },
           {
-            label: 'Holidays',
-            key: 'Holidays',
+            label: "Holidays",
+            key: "Holidays",
           },
           {
-            label: 'Garments Checking Staff',
-            key: 'setting:2',
-          }
+            label: "Garments Checking Staff",
+            key: "setting:2",
+          },
         ],
       },
-      
     ],
-  }, {
-    label: 'Admin',
-    key: 'Admin',
+  },
+  {
+    label: "Admin",
+    key: "Admin",
     icon: <SettingOutlined />,
     children: [
       {
-        type: 'group',
-        label: 'Admin',
+        type: "group",
+        label: "Admin",
         children: [
           {
-            label: 'Chsnge Password',
-            key: 'ChsngePassword',
+            label: "Chsnge Password",
+            key: "ChsngePassword",
           },
           {
-            label: 'Access Authentication',
-            key: 'AccessAuthentication',
+            label: "Access Authentication",
+            key: "AccessAuthentication",
           },
           {
-            label: 'Set Up',
-            key: 'Set Up',
+            label: "Set Up",
+            key: "Set Up",
           },
           {
-            label: 'Design Tag',
-            key: 'Design Tag',
+            label: "Design Tag",
+            key: "Design Tag",
           },
           {
-            label: 'Search Invoice',
-            key: 'SearchInvoice',
+            label: "Search Invoice",
+            key: "SearchInvoice",
           },
           {
-            label: 'Daily Dashboard',
-            key: 'DailyDashboard',
+            label: "Daily Dashboard",
+            key: "DailyDashboard",
           },
           {
-            label: 'SMS Configuration',
-            key: 'SMSConfiguration',
+            label: "SMS Configuration",
+            key: "SMSConfiguration",
           },
           {
-            label: 'Payment Gateway Setup',
-            key: 'PaymentGatewaySetup',
+            label: "Payment Gateway Setup",
+            key: "PaymentGatewaySetup",
           },
           {
-            label: 'Email Configuration',
-            key: 'EmailConfiguration',
+            label: "Email Configuration",
+            key: "EmailConfiguration",
           },
           {
-            label: 'Sticker Configuration',
-            key: 'StickerConfiguration',
+            label: "Sticker Configuration",
+            key: "StickerConfiguration",
           },
           {
-            label: 'Qdc Marketplace',
-            key: 'Qdc Marketplace',
-          }
+            label: "Qdc Marketplace",
+            key: "Qdc Marketplace",
+          },
         ],
       },
-      
     ],
-  }
+  },
 ];
-const index = () => {
-  const [current, setCurrent] = useState('mail');
-  const onClick = (e) => {
-    console.log('click ', e);
-    setCurrent(e.key);
-  };
-  return <Menu className={style['menu-item']} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
-  
-  
+const Index = () => {
+  const [current, setCurrent] = useState("mail");
+  const navigate = useNavigate();
+
+  const clickHandler = (e) => {
+    navigate(e.key)
+    setCurrent(e.key)
+  }
+  return (
+    <Menu
+      className={style["menu-item"]}
+      onClick={clickHandler}
+      selectedKeys={[current]}
+      mode="horizontal"
+      items={items}
+    />
+  );
 };
-export default index;
+export default Index;

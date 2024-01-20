@@ -1,0 +1,42 @@
+.HeadingDiv {
+  width: 100%;
+  height: 45px;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  justify-items: start;
+  border-radius: 5px;
+}
+.HeadingDiv .headingStyles {
+  color: white;
+  font-size: 16px;
+}
+
+.radiaButtonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.textAreaDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.textAreaDiv .textAreaStyles {
+  width: 50%;
+}
+
+.sendButtonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sendButtonDiv .buttonStyles {
+  background-color: #212121;
+  color: white;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}/*# sourceMappingURL=style.module.css.map */

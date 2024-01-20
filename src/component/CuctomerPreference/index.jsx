@@ -1,18 +1,7 @@
 import React from 'react'
 import style from "./style.module.scss";
 import { SaveOutlined } from '@ant-design/icons';
-import { Button, Input, Select, Space } from 'antd';
-const { Search } = Input;
-const options = [
-  {
-    value: 'zhejiang',
-    label: 'Zhejiang',
-  },
-  {
-    value: 'jiangsu',
-    label: 'Jiangsu',
-  },
-];
+import { Button, Input, Space } from 'antd';
 
 const index = () => {
     

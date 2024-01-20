@@ -1,0 +1,22 @@
+.headingDiv {
+  width: 100%;
+  height: 70px;
+  background-color: #212121;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.headingDiv .headingStyle {
+  margin-bottom: 2px;
+}
+
+.ButtonStyle {
+  background-color: #212121;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}/*# sourceMappingURL=style.module.css.map */
