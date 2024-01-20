@@ -88,15 +88,15 @@ const items = [
         children: [
           {
             label: "Print QR TAgs",
-            key: "PrintQRTAgs",
+            key: "/printetag",
           },
           {
             label: "Pending For Finishing",
-            key: "PendingForFinishing",
+            key: "/panding.state",
           },
           {
             label: "Paking Stikers",
-            key: "PakingStikers",
+            key: "/print.tag",
           },
         ],
       },
@@ -113,28 +113,28 @@ const items = [
         children: [
           {
             label: "Cash/Days Book",
-            key: "CashBook",
+            key: "/cash.book.day",
           },
           {
             label: "Detail Cash/Day Book",
-            key: "DetailCash",
+            key: "/cash.Details.book",
           },
           {
             label: "Expensis",
-            key: "Expensis",
+            key: "/expence",
           },
           {
             label: "Income",
-            key: "Income",
-          },
-          {
-            label: "Payment Type",
-            key: "PaymentType",
-          },
-          {
-            label: "Text Report",
-            key: "TextReport",
-          },
+            key: "/income",
+          }
+          // {
+          //   label: "Payment Type",
+          //   key: "PaymentType",
+          // },
+          // {
+          //   label: "Text Report",
+          //   key: "TextReport",
+          // },
         ],
       },
     ],
