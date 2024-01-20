@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./style.module.scss";
 import { SaveOutlined } from '@ant-design/icons';
-import { Button, Input, Select, Space } from 'antd';
+import { Button, Input, Space } from 'antd';
 
 
 const index = () => {
@@ -14,9 +14,7 @@ const index = () => {
         <Space direction="vertical" size="middle">
         <Space.Compact>
                 <Input
-                    style={{
-                    width: '60%',
-                    }}
+                    style={{ width: '60%'}}
                     defaultValue="Edit Record"
                 />
                 <Input

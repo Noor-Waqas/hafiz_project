@@ -14,15 +14,11 @@ const index = () => {
         <Space direction="vertical" size="middle">
         <Space.Compact>
                 <Input
-                    style={{
-                    width: '60%',
-                    }}
+                    style={{ width: '60%',}}
                     defaultValue="Cancel Order"
                 />
                 <Input
-                    style={{
-                    width: '100%',
-                    }}
+                    style={{ width: '100%'}}
                     placeholder='Enter Customer Order Number'
                 />
             </Space.Compact>
