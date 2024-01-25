@@ -1,11 +1,15 @@
 import React from 'react'
 import style from "./style.module.scss";
 import { Button, Input } from 'antd';
+import HeroSection from '../navbar/hero';
+
 
 
 const index = () => {
   return (
-    <div>
+    <>
+    <HeroSection/>
+    <div style={{marginTop:"10px"}}>
          <div className={style.HeadingDiv}>
             <h1 className={style.headingStyles}>Merge Customer</h1>
         </div>
@@ -28,6 +32,7 @@ const index = () => {
               </div>
         </div>
     </div>
+    </>
   )
 }
 

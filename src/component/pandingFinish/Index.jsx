@@ -1,8 +1,12 @@
 import React from 'react'
+import HeroSection from '../navbar/hero';
+
 
 const Index = () => {
-  return (
-    <div>panding tag</div>
+  return (<>
+  <HeroSection/>
+    <div style={{marginTop:"10px"}}>panding tag</div>
+    </>
   )
 }
 

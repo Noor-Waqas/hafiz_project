@@ -3,10 +3,14 @@ import React from 'react'
 import style from "./style.module.scss";
 import { UserOutlined } from '@ant-design/icons';
 import { Input } from 'antd';
+import HeroSection from '../navbar/hero';
+
 
 const index = () => {
   return (
-    <div>
+    <>
+    <HeroSection/>
+    <div style={{marginTop:"10px"}}>
     <div className={style.HeadingDiv}>
      <h1 className={style.headingStyles}>Customer Advances</h1>
     </div>
@@ -14,6 +18,7 @@ const index = () => {
     <Input className={style.inputStyles} size="large" placeholder="Filter By Customers" prefix={<UserOutlined />} />
     </div>
     </div>
+    </>
   )
 }
 

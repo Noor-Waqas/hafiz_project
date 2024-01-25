@@ -2,12 +2,15 @@ import React from 'react'
 import style from "./style.module.scss";
 import { SaveOutlined } from '@ant-design/icons';
 import { Button, Input, Space } from 'antd';
+import HeroSection from '../navbar/hero';
+
 
 const index = () => {
     
 
-  return (
-    <div>
+  return (<>
+  <HeroSection/>
+    <div style={{marginTop:"10px"}}>
         <div className={style.HeadingDiv}>
             <h1 className={style.headingStyles}>Customer Preference</h1>
         </div>
@@ -34,6 +37,7 @@ const index = () => {
 
 
     </div>
+    </>
   )
 }
 
