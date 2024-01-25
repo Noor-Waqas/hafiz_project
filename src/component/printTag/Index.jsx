@@ -2,10 +2,14 @@ import React from 'react'
 import style from "./style.module.scss";
 import { Button, Input } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import HeroSection from '../navbar/hero';
+
 
 const Index = () => {
   return (
-    <div> 
+    <>
+    <HeroSection/>
+    <div style={{marginTop:"10px"}}> 
        <div className={style.HeadingDiv}>
           <h1 className={style.headingStyles}>Print QR Tags</h1>
           <input type="date" className={style.dateStyles} />
@@ -23,7 +27,7 @@ const Index = () => {
     </div>
     </div>
     </div>
-  )
+ </> )
 }
 
 export default Index

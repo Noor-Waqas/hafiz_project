@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button, Input, Radio, Space } from 'antd';
 import style from "./style.module.scss";
 const { TextArea } = Input;
+import HeroSection from '../navbar/hero';
+
 
 
 const index = () => {
@@ -10,8 +12,9 @@ const index = () => {
       console.log('radio checked', e.target.value);
       setValue(e.target.value);
     }
-  return (
-    <div>  
+  return (<>
+  <HeroSection/>
+    <div style={{marginTop:"10px"}}>  
     <div className={style.HeadingDiv}>
      <h1 className={style.headingStyles}>Send Promotional SMS: Grow your business by reaching out to your customers with latest offers and promotional schemes.</h1>
     </div>
@@ -30,7 +33,7 @@ const index = () => {
         <Button className={style.buttonStyles}>Send Now</Button>
     </div>
 </div>
-  )
+  </>)
 }
 
 export default index

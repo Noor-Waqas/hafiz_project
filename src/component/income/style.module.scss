@@ -1,0 +1,52 @@
+.HeadingDiv {
+    width: 100%;
+    height: 55px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    justify-items: start;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+  }
+  .inputFeildDiv{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    .LedgerButton{
+      background-color: #212121;
+      color: white;
+      font-weight: 700;
+    }
+    .SaveButtonstyles{
+      background-color: #212121;
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      font-weight: 700;
+      width: 200px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+  }
+  .ButtonStyles{
+    background-color: #212121;
+      color: white;
+      font-weight: 700;
+  }
+  .showButton{
+
+    background-color: #212121;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  
