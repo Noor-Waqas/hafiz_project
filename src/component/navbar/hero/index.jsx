@@ -181,7 +181,7 @@ const items = [
         children: [
           {
             label: "Store Information",
-            key: "StoreInformation",
+            key: "/store.information",
           },
           {
             label: "Garment Descriptions",
@@ -210,7 +210,7 @@ const items = [
         children: [
           {
             label: "Chsnge Password",
-            key: "ChsngePassword",
+            key: "/change.password",
           },
           {
             label: "Access Authentication",
@@ -221,37 +221,13 @@ const items = [
             key: "Set Up",
           },
           {
-            label: "Design Tag",
-            key: "Design Tag",
-          },
-          {
             label: "Search Invoice",
             key: "SearchInvoice",
           },
           {
             label: "Daily Dashboard",
             key: "DailyDashboard",
-          },
-          {
-            label: "SMS Configuration",
-            key: "SMSConfiguration",
-          },
-          {
-            label: "Payment Gateway Setup",
-            key: "PaymentGatewaySetup",
-          },
-          {
-            label: "Email Configuration",
-            key: "EmailConfiguration",
-          },
-          {
-            label: "Sticker Configuration",
-            key: "StickerConfiguration",
-          },
-          {
-            label: "Qdc Marketplace",
-            key: "Qdc Marketplace",
-          },
+          }
         ],
       },
     ],
