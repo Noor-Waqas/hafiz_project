@@ -23,6 +23,12 @@ import CashBookDay from "../component/cashBookDay/Index";
 import CashDetails from "../component/cashDetailsBook/Index";
 import Expence from "../component/expence/Index"
 import Income from "../component/income/Index";
+import ServiceWiseOrder from "../component/ServiceWiseOrder/Index";
+import ServiceAndGarment from "../component/ServiceAndGarment/Index";
+import PaymentAdjustment from "../component/PaymentAdjustment/Index";
+import OrderbyLocality from "../component/OrderbyLocality/Index";
+import GarmentStatus from "../component/GarmentStatus/Index";
+import OrderReport from "../component/OrderReport/Index";
 
 const index = () => {
   return (
@@ -54,6 +60,12 @@ const index = () => {
         <Route path="/cash.Details.book" element={<CashDetails/>} />
         <Route path="/expence" element={<Expence/>} />
         <Route path="/income" element={<Income/>} />
+        <Route path="/service.wise.order" element={<ServiceWiseOrder/>} />
+        <Route path="/service.and.garment" element={<ServiceAndGarment/>} />
+        <Route path="/payment.adjustment" element={<PaymentAdjustment/>} />
+        <Route path="/order.by.locality" element={<OrderbyLocality/>} />
+        <Route path="/garment.status" element={<GarmentStatus/>} />
+        <Route path="/order.report" element={<OrderReport/>} />
 
        </Route>
       </Routes>

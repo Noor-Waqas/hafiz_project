@@ -1,0 +1,39 @@
+.HeadingDiv {
+    width: 100%;
+    height: 55px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    justify-items: start;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    .dateStyles{
+        height: 30px;
+        width: 250px;
+        margin-top: 12px;
+        margin-right: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+       
+    }
+  }
+  .mainInputDiv{
+    display: flex;
+    justify-content: space-around;
+    .inputStyle{
+    display:flex;
+    gap:10px;
+    margin-top:10px;  
+    height: 40px;
+    }
+    
+  }
+  .mainbutton{
+    width: 200px;
+    font-size: 12px;
+    background-color: #212121;
+    color: white;
+    height: 50px;
+}
+  
