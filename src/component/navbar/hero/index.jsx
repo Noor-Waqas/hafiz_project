@@ -127,14 +127,6 @@ const items = [
             label: "Income",
             key: "/income",
           }
-          // {
-          //   label: "Payment Type",
-          //   key: "PaymentType",
-          // },
-          // {
-          //   label: "Text Report",
-          //   key: "TextReport",
-          // },
         ],
       },
     ],
@@ -192,41 +184,17 @@ const items = [
             key: "StoreInformation",
           },
           {
-            label: "Price List",
-            key: "PriceList",
-          },
-          {
             label: "Garment Descriptions",
-            key: "GarmentDescriptions",
-          },
-          {
-            label: "Brand",
-            key: "Brand",
+            key: "/garment.descriptions",
           },
           {
             label: "Colours",
-            key: "Colours",
+            key: "/colors",
           },
           {
             label: "Garment Return Cause",
-            key: "GarmentReturnCause",
-          },
-          {
-            label: "Payment Adjustment Type",
-            key: "PaymentAdjustmentType",
-          },
-          {
-            label: "Payment Mode Type",
-            key: "PaymentModeType",
-          },
-          {
-            label: "Holidays",
-            key: "Holidays",
-          },
-          {
-            label: "Garments Checking Staff",
-            key: "setting:2",
-          },
+            key: "/garment.return.cause",
+          }
         ],
       },
     ],
