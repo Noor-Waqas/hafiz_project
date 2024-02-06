@@ -150,60 +150,30 @@ const items = [
         children: [
           {
             label: "Order",
-            key: "Order",
-          },
-          {
-            label: "Sales and Delivery",
-            key: "SalesandDelivery",
+            key: "/order.report",
           },
           {
             label: "Service Wise Order",
-            key: "ServiceWiseOrder",
+            key: "/service.wise.order",
           },
           {
             label: "Service And Garment",
-            key: "ServiceAndGarment",
+            key: "/service.and.garment",
           },
-          {
-            label: "Category Wise Report",
-            key: "CategoryWiseReport",
-          },
-          {
-            label: "Garment Wise",
-            key: "GarmentWise",
-          },
+      
           {
             label: "Garment Status",
-            key: "GarmentStatus",
-          },
-          {
-            label: "Garment Details",
-            key: "GarmentDetails",
+            key: "/garment.status",
           },
           {
             label: "Payments Adjustment",
-            key: "PaymentsAdjustment",
-          },
-          {
-            label: "Daily Customer Addition",
-            key: "DailyCustomerAddition",
-          },
-          {
-            label: "Marked Ready by User",
-            key: "MarkedReadyUser",
-          },
-          {
-            label: "Without Ticket Delivery",
-            key: "WithoutTicketDelivery",
+            key: "/payment.adjustment",
           },
           {
             label: "Order by Locality",
-            key: "OrderbyLocality",
+            key: "/order.by.locality",
           },
-          {
-            label: "Pending Stock",
-            key: "PendingStock",
-          },
+          
         ],
       },
     ],
