@@ -29,6 +29,9 @@ import PaymentAdjustment from "../component/PaymentAdjustment/Index";
 import OrderbyLocality from "../component/OrderbyLocality/Index";
 import GarmentStatus from "../component/GarmentStatus/Index";
 import OrderReport from "../component/OrderReport/Index";
+import GarmentDescriptions from "../component/GarmentDescriptions/Index"
+import Colors from "../component/colorDetails/Index";
+import GarmentReturnCause from "../component/GarmentReturnCause/Index";
 
 const index = () => {
   return (
@@ -66,6 +69,14 @@ const index = () => {
         <Route path="/order.by.locality" element={<OrderbyLocality/>} />
         <Route path="/garment.status" element={<GarmentStatus/>} />
         <Route path="/order.report" element={<OrderReport/>} />
+        <Route path="/garment.descriptions" element={<GarmentDescriptions/>} />
+        <Route path="/colors" element={<Colors/>} />
+        <Route path="/garment.return.cause" element={<GarmentReturnCause/>} />
+
+
+        
+
+
 
        </Route>
       </Routes>
