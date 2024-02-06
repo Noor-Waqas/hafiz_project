@@ -32,6 +32,8 @@ import OrderReport from "../component/OrderReport/Index";
 import GarmentDescriptions from "../component/GarmentDescriptions/Index"
 import Colors from "../component/colorDetails/Index";
 import GarmentReturnCause from "../component/GarmentReturnCause/Index";
+import StoreInformation from "../component/StoreInformation/Index";
+import ChangePassword from "../component/changePassword/Index";
 
 const index = () => {
   return (
@@ -72,12 +74,8 @@ const index = () => {
         <Route path="/garment.descriptions" element={<GarmentDescriptions/>} />
         <Route path="/colors" element={<Colors/>} />
         <Route path="/garment.return.cause" element={<GarmentReturnCause/>} />
-
-
-        
-
-
-
+        <Route path="/store.information" element={<StoreInformation/>} />
+        <Route path="/change.password" element={<ChangePassword/>} />
        </Route>
       </Routes>
     </BrowserRouter>
