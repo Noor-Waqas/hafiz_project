@@ -43,14 +43,14 @@ const index = () => {
 
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Login/>} />
       <Route element={<Nav />}>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/customer" element={<Cuctomer />} />
         <Route path="/reports" element={<Report />} />
         <Route path="/setup" element={<Setting />} />
         <Route path="/support" element={<Support />} />
         <Route path="/subscription" element={<Subscription />} />
-        <Route path="/login" element={<Login/>} />
         <Route path="/hero" element={<HeroPart/>} />
         <Route path="/preference" element={<Cuctomer_Preference/>} />
         <Route path="/merge" element={<Merge/>} />
