@@ -34,6 +34,7 @@ import Colors from "../component/colorDetails/Index";
 import GarmentReturnCause from "../component/GarmentReturnCause/Index";
 import StoreInformation from "../component/StoreInformation/Index";
 import ChangePassword from "../component/changePassword/Index";
+import SearchInvoice from "../component/SearchInvoice/Index";
 
 const index = () => {
   return (
@@ -76,6 +77,8 @@ const index = () => {
         <Route path="/garment.return.cause" element={<GarmentReturnCause/>} />
         <Route path="/store.information" element={<StoreInformation/>} />
         <Route path="/change.password" element={<ChangePassword/>} />
+        <Route path="/search.invoice" element={<SearchInvoice/>} />
+
        </Route>
       </Routes>
     </BrowserRouter>
