@@ -13,6 +13,8 @@ const Index = () => {
        <div className={style.HeadingDiv}>
           <h1 > Change Password </h1>
       </div>
+      <div style={{border:"2px solid black",borderRadius:"5px"}}>
+        <h1 style={{textAlign:"center"}}>Reset Your Password</h1>
       <div className={style.MainInputDiv}>
         <div className={style.MainInputSecondDiv}>
             <Input type='text' placeholder='Current Password' className={style.inputStyling} required/>
@@ -23,6 +25,7 @@ const Index = () => {
 
        <div className={style.updateButton}>
             <Button className={style.updateButtonStyles}> <CopyOutlined />Update</Button>
+        </div>
         </div>
     </div>
   </>)

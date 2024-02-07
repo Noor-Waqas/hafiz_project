@@ -222,7 +222,7 @@ const items = [
           },
           {
             label: "Search Invoice",
-            key: "SearchInvoice",
+            key: "/search.invoice",
           },
           {
             label: "Daily Dashboard",

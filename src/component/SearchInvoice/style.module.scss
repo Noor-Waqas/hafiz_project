@@ -16,19 +16,12 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    margin-top: 0px;
-    border: 2px solid #212121;
+    margin-top: 10px;
     .LedgerButton{
       background-color: #212121;
       color: white;
-      height: 40px;
+      height: 50px;
+
       font-weight: 700;
     }
-  }
-  .updateButton{
-    width: 300px;
-    height: 50px;
-    background-color: #212121;
-    color: white;
-    font-size: 24px;
   }
