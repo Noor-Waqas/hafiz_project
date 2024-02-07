@@ -32,13 +32,7 @@ const index = () => {
     <div className={style.mainSectionDiv}>
       <div className={style.MainFoamDiv}>
         <div className={style.imgStylesDiv} >
-      <h1
-       
-        alt="Logo"
-        style={{ width: '60px', marginBottom: '50px',textAlign:"center" }}
-      >
-    Login
-        </h1>
+      <h1 alt="Logo" style={{whiteSpace:"nowrap"}} > Well Come To Naqsh e Lasani Drycleaner </h1>
       </div>
 
       <Form

@@ -3,9 +3,6 @@ import { Button, Input, Space } from 'antd';
 import style from "./style.module.scss";
 import HeroSection from '../navbar/hero';
 
-import { FormOutlined ,DeleteOutlined} from '@ant-design/icons';
-
-
 const Index = () => {
 
   return (
